@@ -1,0 +1,17 @@
+<div class="menu">
+    <a href="http://localhost:8080/">INICIO</a>
+    <a href="http://localhost:8080/addProduct">AGREGAR PRODUCTOS</a>
+</div>
+    <h2>GORRAS DISPONIBLES</h2>
+<div class="display">
+    {{#each stock}}
+    <div class="productContainer">
+        <center><img src="{{this.thumbnail}}" alt="not found"></center>
+        <div>
+            <p>{{this.title}}</p>
+            <p>${{this.price}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>
+<link rel="stylesheet" href="css/product.css">
