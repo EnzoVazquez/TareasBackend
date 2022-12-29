@@ -11,9 +11,9 @@ swal.fire({
         return !value || !value.includes("@") && "necesitamos tu mail para continuar"
     },
     allowOutsideClick:false,
-    allowEscapeKey:false,
-}).then(result =>{
-    user = result.value
+    allowEscapeKey: false,
+}).then(result=>{
+    user = result.value;
 })
 
 /*eventos*/
@@ -24,7 +24,7 @@ chatBox.addEventListener('keyup',e=>{
             chatBox.value="";
         }
     }
-});
+})
 
 socket.on('chatMessages',(data) =>{
     let chatMessages = document.getElementById("data");

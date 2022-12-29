@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.menu{
+    color: white;
+    padding: 20px;
+    background-color: #3F0F0E;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    margin: 1rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 3rem;
+    padding: 3rem 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1000px;
+    align-items: center;
+    justify-content: space-around;
+}
+label{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 1rem;
+    font-size: larger;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #3F0F0E;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+  }

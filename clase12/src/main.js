@@ -3,16 +3,19 @@ import productsRouter from "./routes/productsRouter.js"
 import handlebars from "express-handlebars"
 import __dirname from "./utils.js";
 import views from "./routes/viewsRouter.js"
-import { Server } from 'socket.io';
-import chatContext from './contexts/chatContext.js';
+import { Server } from 'socket.io'
+import chatContext from "./contexts/chatContext.js";
 
+//inicializamos el servidor
 const app = express();
 const PORT = process.env.PORT || 8080;
-
 const server = app.listen(PORT,()=> console.log(`escuchando en el puerto ${PORT}`));
-
 const io = new Server(server)
-const utilidadesChat = new chatContext()
+
+//contexts
+let utilidadesChat = new chatContext();
+
+//lectura de archivos estaticos
 app.use(express.static(__dirname +'/public'));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
@@ -36,7 +39,6 @@ io.on("connection", async(socket)=>{
     socket.on("message", async(data)=>{
         await utilidadesChat.save(data);
         let chat = await utilidadesChat.getUsers();
-        io.emit("chatMessage", chat)
-    })
-
+        io.emit("chatMessages",chat);
+    });
 })

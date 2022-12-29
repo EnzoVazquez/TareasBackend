@@ -1,0 +1,17 @@
+<div class="menu">
+    <a href="http://localhost:8080/">INICIO</a>
+    <a href="http://localhost:8080/products">TODOS LOS PRODUCTOS</a>
+</div>
+<h2>AGREGAR UN NUEVO PRODUCTO</h2>
+<div>
+    <form action="/api/productos" method="POST">
+        <label for="title">NOMBRE</label>
+        <input type="text" name="title"  id="title" required>
+        <label for="price">PRECIO</label>
+        <input type="text" name="price" id="price" required>
+        <label for="thumbnail">THUMBNAIL</label>
+        <input type="text" name="thumbnail" id="thumbnail" required>
+        <input type="submit"  value="AGREGAR PRODUCTO">
+    </form>
+</div>
+<link rel="stylesheet" href="css/addProduct.css">
