@@ -5,6 +5,7 @@ import __dirname from "./utils.js";
 import views from "./routes/viewsRouter.js"
 import { Server } from 'socket.io'
 import chatContext from "./contexts/chatContext.js";
+import productContext from './contexts/context.js'
 
 //inicializamos el servidor
 const app = express();
@@ -14,6 +15,7 @@ const io = new Server(server)
 
 //contexts
 let utilidadesChat = new chatContext();
+let utilidadesProductos = new productContext(__dirname + '/files/productos.json');
 
 //lectura de archivos estaticos
 app.use(express.static(__dirname +'/public'));
@@ -33,7 +35,9 @@ app.use("/api/productos", productsRouter);
 io.on("connection", async(socket)=>{
     console.log("socket conectado");
     let chat = await utilidadesChat.getUsers();
+    let productos = await utilidadesProductos.getAll();
     io.emit("chatMessages", chat);
+    io.emit("productList", productos)
 
     //socket chat
     socket.on("message", async(data)=>{
@@ -41,4 +45,5 @@ io.on("connection", async(socket)=>{
         let chat = await utilidadesChat.getUsers();
         io.emit("chatMessages",chat);
     });
+
 })

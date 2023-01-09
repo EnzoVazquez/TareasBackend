@@ -35,4 +35,6 @@ socket.on('chatMessages',(data) =>{
         messages = messages + `<span>${message.date}</span>${message.user}:${message.message}</br>`
     });
     chatMessages.innerHTML = messages;
+
+    
 })
