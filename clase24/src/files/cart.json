@@ -1,0 +1,40 @@
+[
+	{
+		"id": 1,
+		"date": "2022-12-20T13:44:59.308Z",
+		"productos": []
+	},
+	{
+		"id": 2,
+		"date": "2022-12-20T13:44:59.726Z",
+		"productos": []
+	},
+	{
+		"id": 3,
+		"date": "2022-12-20T13:45:00.175Z",
+		"productos": []
+	},
+	{
+		"id": 4,
+		"date": "2022-12-20T13:45:00.522Z",
+		"productos": [
+			{
+				"title": "POLO Bear Classic Corduroy Dadhat Verde",
+				"price": "79,00",
+				"thumbnail": "https://cdn.shopify.com/s/files/1/0809/2599/products/ecom_tienda_1022_077_708x943.jpg?v=1667383404",
+				"stock": "5",
+				"id": 2
+			}
+		]
+	},
+	{
+		"id": 5,
+		"date": "2022-12-20T13:45:00.896Z",
+		"productos": []
+	},
+	{
+		"id": 6,
+		"date": "2022-12-20T13:45:01.249Z",
+		"productos": []
+	}
+]

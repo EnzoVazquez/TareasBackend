@@ -1,0 +1,4 @@
+{"level":"info","message":"127.0.0.1- info error"}
+{"level":"warn","message":"127.0.0.1- warn error"}
+{"level":"error","message":"127.0.0.1- error error"}
+{"level":"http","message":"GET en /logger - 15/3/2023"}

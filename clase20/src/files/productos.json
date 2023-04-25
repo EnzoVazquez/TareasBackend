@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Teclado Mecanico Logitech PRO TKL LOL 2",
+		"price": "17000",
+		"thumbnail": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_33275_Teclado_Mecanico_Logitech_PRO_TKL_LOL_2_30e10b48-grn.jpg",
+		"id": 1
+	},
+	{
+		"title": "Teclado Mecanico ASUS ROG Strix Scope TKL RGB Cherry Red ",
+		"price": "19800",
+		"thumbnail": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_31482_Teclado_Mecanico_ASUS_ROG_Strix_Scope_TKL_RGB_Cherry_Red_ac577937-grn.jpg",
+		"id": 2
+	},
+	{
+		"title": "Teclado Mecanico Corsair K100 RGB Switch Cherry MX Speed",
+		"price": "40.000",
+		"thumbnail": "https://d3ugyf2ht6aenh.cloudfront.net/stores/599/423/products/15502-31-9cc4e91b884638345716226519127360-640-0.jpg",
+		"id": 3
+	},
+	{
+		"title": "Teclado Mecanico Logitech PRO X RGB Lightsync ",
+		"price": "18000",
+		"thumbnail": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_17632_Teclado_Mecanico_Logitech_PRO_X_RGB_Lightsync_011bc1d8-grn.jpg",
+		"id": 4
+	},
+	{
+		"title": "Teclado Mecanico HP HyperX Origins 60 Pink HX Red US",
+		"price": "14100",
+		"thumbnail": "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_32399_Teclado_Mecanico_HP_HyperX_Origins_60_Pink_HX_Red_US_ce07676f-grn.jpg",
+		"id": 5
+	}
+]

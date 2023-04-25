@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30rem;
+    height: 2rem;
+    position: relative;
+    top: 50%;
+    left: 25%;
+    right: 25%;
+    margin: -25px 0 0 -25px;
+}
+
+.titles{
+    background-color: #0fac43;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.letrero{
+    text-align: left;
+
+}
+
+a{
+    border-radius: 5px;
+    padding: 10px 7px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    margin: 5px;
+}
+
+.formProductos{
+    margin-top: 3rem;
+} 

@@ -1,0 +1,17 @@
+<div class="letrero">
+    <h1>Todos nuestros productos</h1>
+    <a href="http://localhost:8080/productoNuevo">agregar producto</a>
+    <a href="http://localhost:8080/">Inicio</a>
+</div>
+
+<div class="productos">
+    {{#each stock}}
+        <div>
+            <img src="{{this.thumbnail}}" alt="not found">
+            <div class="titles">
+                <p>{{this.title}}</p>
+                <p>$ {{this.price}}</p>
+            </div>
+        </div>
+    {{/each}}
+</div>
