@@ -1,0 +1,26 @@
+<div class="menu">
+    <a href="http://localhost:8080/main">INICIO</a>
+    <a href="http://localhost:8080/addProduct">AGREGAR PRODUCTOS</a>
+</div>
+    <h2>GORRAS DISPONIBLES</h2>
+<div class="display">
+    {{#each stock}}
+    <div class="productContainer">
+        <center><img src="{{this.thumbnail}}" alt="not found"></center>
+        <div>
+            <p>{{this.title}}</p>
+            <p>${{this.price}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>
+<div>
+{{#if paginationData.hasPrevPage}}
+    <a href="http://localhost:8080?page={{paginationData.prevPage}}"><button>Anterior</button></a>
+{{/if}}
+<p>{{paginationData.page}}</p>
+{{#if paginationData.hasNextPage}}
+    <a href="http://localhost:8080?page={{paginationData.nextPage}}"><button>Siguiente</button></a>
+{{/if}}
+</div>
+<link rel="stylesheet" href="css/product.css">
